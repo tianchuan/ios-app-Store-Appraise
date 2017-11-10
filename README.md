@@ -14,6 +14,7 @@ appId 在https://itunesconnect.apple.com中创建应用即可在应用界面获�
 苹果提供了一个框架StoreKit.framework,导入StoreKit.framework,在需要跳转的控制器里面添加头文件#import, 实现代理方法：< SKStorePRoductViewControllerDelegate >
 
 //自定义方法
+```ios
 - (void)loadAppStore
 {
 
@@ -30,6 +31,7 @@ NSLog(@"error %@ with userInfo %@",error,[error userInfo]);
 }];
 
 }
+```
 
 #pragma mark - SKStoreProductViewControllerDelegate
 - (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController{
