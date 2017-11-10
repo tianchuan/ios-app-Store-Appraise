@@ -31,13 +31,12 @@ NSLog(@"error %@ with userInfo %@",error,[error userInfo]);
 }];
 
 }
-```
 
 #pragma mark - SKStoreProductViewControllerDelegate
 - (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController{
 [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+```
 
 在info.plist 中 添加App Transport Security Settings
 
