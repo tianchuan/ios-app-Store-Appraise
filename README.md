@@ -17,7 +17,7 @@ appId 在 https://itunesconnect.apple.com 中创建应用即可在应用界面�
 ```objective-c
 - (void)loadAppStore
 {
-//此方法只能跳转到商店评分界面，点击评分无反应
+//异常：此方法只能跳转到商店评分界面，点击评分无反应
 //苹果提供了一个框架StoreKit.framework,导入StoreKit.framework,在需要跳转的控制器里面添加头文件#import, 实现代理方法：< SKStoreProductViewControllerDelegate >
 
 SKStoreProductViewController *storeProductView = [[SKStoreProductViewController alloc] init];
