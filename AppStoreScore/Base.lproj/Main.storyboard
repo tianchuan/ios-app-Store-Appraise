@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MN2-cB-qaf"/>
+                        <viewControllerLayoutGuide type="bottom" id="dfi-hL-HNW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Os1-Wv-Ic3">
+                                <rect key="frame" x="30" y="100" width="315" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="x7v-zi-hd7"/>
+                                </constraints>
+                                <state key="normal" title="去app store评分"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onclick_score" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaG-Nd-vgf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdE-Te-ZcR">
+                                <rect key="frame" x="30" y="190" width="315" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.42352941179999998" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yEh-Lr-Jmz"/>
+                                </constraints>
+                                <state key="normal" title="app 内进行评分"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onclick_interiorRating" destination="BYZ-38-t0r" eventType="touchUpInside" id="bBA-qa-X0g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Os1-Wv-Ic3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="1TJ-Zj-gcv"/>
+                            <constraint firstAttribute="trailing" secondItem="gdE-Te-ZcR" secondAttribute="trailing" constant="30" id="8td-Tj-df4"/>
+                            <constraint firstItem="gdE-Te-ZcR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="P7h-k3-0KV"/>
+                            <constraint firstItem="gdE-Te-ZcR" firstAttribute="top" secondItem="Os1-Wv-Ic3" secondAttribute="bottom" constant="50" id="Sem-yn-cmA"/>
+                            <constraint firstAttribute="trailing" secondItem="Os1-Wv-Ic3" secondAttribute="trailing" constant="30" id="UoB-e8-rig"/>
+                            <constraint firstItem="Os1-Wv-Ic3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="uzt-Fw-KVI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
