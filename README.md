@@ -3,7 +3,7 @@
 1、一种是跳出应用,跳转到AppStore,进行评分；
 2、另一种是在应用内,内置AppStore进行评分。
 
-appId 在https://itunesconnect.apple.com中创建应用即可在应用界面获得
+appId 在 https://itunesconnect.apple.com 中创建应用即可在应用界面获得
 
 1.跳出应用,跳转到AppStore,进行评分
 
